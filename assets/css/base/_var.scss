@@ -1,0 +1,28 @@
+//
+// Add whatever variables you would like
+//
+
+// Colors
+
+
+
+
+
+// font
+
+
+ 
+//mixins
+.wrap{
+	max-width:75rem;
+	width:100%;
+	margin: 0 auto;
+}
+
+// Device Breakpoint Definitions
+$mobile: new-breakpoint(min-width 320px max-width 480px);
+$tablet: new-breakpoint(min-width 768px max-width 1024px);
+
+
+// Content Device Breakpoint Definitions
+
