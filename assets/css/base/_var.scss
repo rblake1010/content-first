@@ -13,11 +13,22 @@
 
  
 //mixins
+@mixin outer-container{
+  max-width:75rem; // 1200px
+  width: 100%;
+  margin:0 auto;
+}
 .wrap{
-	max-width:75rem;
+	@include outer-container;
 	width:100%;
 	margin: 0 auto;
+	@include clearfix;
 }
+
+.hidden{
+	@include hide-text;
+}
+
 
 // Device Breakpoint Definitions
 $mobile: new-breakpoint(min-width 320px max-width 480px);

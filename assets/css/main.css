@@ -2616,7 +2616,18 @@ html {
 .wrap {
   max-width: 75rem;
   width: 100%;
+  margin: 0 auto;
+  width: 100%;
   margin: 0 auto; }
+  .wrap::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.hidden {
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap; }
 
 * {
   -moz-box-sizing: border-box;
@@ -2633,7 +2644,6 @@ body {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.618em;
-  color: #666;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
@@ -2651,3 +2661,15 @@ h1, h2, h3, h4, h5, h6 {
 .huge, h1 {
   font-size: 3em;
   margin: 0.563em 0; }
+
+.large, h2 {
+  font-size: 2.25em;
+  margin: 0.625em 0; }
+
+.bigger, h3 {
+  font-size: 1.5em;
+  margin: 1.313em 0; }
+
+.big, h4 {
+  font-size: 1.313em;
+  margin: 1.313em 0; }
