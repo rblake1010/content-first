@@ -5,31 +5,14 @@ html(lang="en")
 		meta(charset="utf-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1")
 		link(rel="stylesheet", href="assets/css/main.css")
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css")
 	body
-
-		header.wrap(role="banner", itemscope, itemtype="https://schema.org/WPHeader")
-
-			.logo-title
-				img.logo(src="/assets/img/logo.png", height="45", width="45" alt="")
-				h1.title START <span>UP</span>
-
-			nav(role="navigation", itemscope, itemtype='https://schema.org/SiteNavigationElement')
-				h1.hidden Main Navigation
-				div.navicon.closed
-					i.fa.fa-navicon
-
-				ul.navmenu#opennav
-					li: a(href="#") Home
-					li
-						a(href="#about") About Us <span>+</span>
-						ul
-							li: a(href="#ourpeople") Meet Out People
-							li: a(href="#success") Read Success Stories
-							li: a(href="#careers") Learn About Careers
-					li: a(href="#pricing") Pricing
-					li: a(href="#blog") Blog
-					li: a(href="#contact") Contact
-
+	
+	include partials/header
+	main(role="main")
+		include partials/herounit
+		include partials/startup
+		
 
 
 	include partials/scripts

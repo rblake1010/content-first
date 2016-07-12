@@ -10,6 +10,7 @@ body{
 	@include fontSize(18px);
 	line-height: 1.618em;	
 	-webkit-font-smoothing: antialiased;
-	-webkit-text-size-adjust: 100%;		
+	-webkit-text-size-adjust: 100%;
+	font-family: Lato, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;		
 }
 

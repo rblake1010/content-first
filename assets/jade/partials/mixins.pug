@@ -1,0 +1,8 @@
+mixin point(icon, title, link)
+	.point
+		h2
+			i.fa(class="fa-" + icon) 
+			| #{title}
+		block
+		p.pointlink
+			a(href="#") #{link} &rsaquo; &rsaquo; &rsaquo;

@@ -2623,6 +2623,12 @@ html {
     clear: both;
     content: "";
     display: table; }
+  @media (max-width: 79rem) {
+    .wrap {
+      padding: 0 2rem; } }
+  @media (max-width: 37.5rem) {
+    .wrap {
+      padding: 0 1.5rem; } }
 
 .hidden {
   overflow: hidden;
@@ -2645,7 +2651,8 @@ body {
   font-size: 1.125rem;
   line-height: 1.618em;
   -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+  font-family: Lato, "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; }
 
 a {
   color: red;
@@ -2673,3 +2680,21 @@ h1, h2, h3, h4, h5, h6 {
 .big, h4 {
   font-size: 1.313em;
   margin: 1.313em 0; }
+
+.logo-title {
+  float: left; }
+  .logo-title .logo {
+    margin-right: 1em;
+    vertical-align: top;
+    width: 2.8125rem; }
+    @media (max-width: 400px) {
+      .logo-title .logo {
+        margin-right: 0.5em; } }
+  .logo-title h1.title {
+    display: inline;
+    font-weight: 900;
+    font-size: 42px;
+    font-size: 2.625rem;
+    line-height: 1.07em; }
+    .logo-title h1.title span {
+      font-weight: 300; }
